@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp" android:background="#FAFBFF">
+<TextView android:id="@+id/flashcard_question" android:layout_width="match_parent" android:layout_height="200dp" android:gravity="center" android:text="Who is the 44th President of the United States?" android:textSize="40sp" android:textColor="#234D68" android:background="@drawable/card_question" android:elevation="6dp" android:padding="12dp"/>
+<TextView android:id="@+id/flashcard_answer" android:layout_width="match_parent" android:layout_height="200dp" android:gravity="center" android:text="Barack Obama" android:textSize="40sp" android:textColor="#20683B" android:background="@drawable/card_answer" android:elevation="6dp" android:visibility="invisible"/>
+<LinearLayout android:id="@+id/choices" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_below="@id/flashcard_question" android:layout_marginTop="18dp">
+<TextView android:id="@+id/choice1" style="@style/ChoiceStyle" android:text="Bill Clinton"/>
+<TextView android:id="@+id/choice2" style="@style/ChoiceStyle" android:text="George H. W. Bush"/>
+<TextView android:id="@+id/choice3" style="@style/ChoiceStyle" android:text="Barack Obama"/>
+</LinearLayout>
+<Button android:id="@+id/toggleChoices" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:text="◉ Show / Hide Choices" android:contentDescription="Toggle answer choices"/>
+</RelativeLayout>
